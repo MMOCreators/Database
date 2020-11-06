@@ -9,7 +9,7 @@ var chance = new Chance();
 const faker = require('faker');
 const users = [...Array(100)].map((user, i) => (
   {
-    user_id: i,
+    user_id: i+1,
     display_name: chance.name(),
     created_on: new Date(),
     updated_at: new Date()

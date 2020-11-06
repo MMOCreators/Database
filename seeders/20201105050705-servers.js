@@ -10,7 +10,7 @@ const faker = require('faker');
 const servers = [...Array(100)].map((server) => (
   {
     name: chance.city(),
-    realm_id: chance.integer({ min: 1, max: 6 }),
+    realm_id: chance.integer({ min: 1, max: 5 }),
     population: chance.integer({ min: 1, max: 100 }),
     capacity: chance.integer({ min: 101, max: 1000 }),
     last_restart_on: chance.pickone([null, new Date()]),
